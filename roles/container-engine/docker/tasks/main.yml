@@ -99,6 +99,9 @@
     - docker-ce
     - docker-ce-cli
 
+- debug:
+    msg: "{{ docker_package_info.pkgs }}"
+
 - name: ensure docker packages are installed
   package:
     name: "{{ docker_package_info.pkgs }}"
